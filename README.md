@@ -1,7 +1,7 @@
 # DevOps MVP Anypoint Connector Jenkins 
 This is a simple opensource Jenkins Connector for Anypoint Studio for orchestrating Jenkins Jobs using API-led connectivity in interaction with other systems such as Atlassian Jira, ServiceNow, ALM Octane, BMC Remedy, etc. This connector can also be used to orchestrate an automated release process involving multiple tools to interact with Jenkins.
 
-![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/main/mvp-jenkins-connector.png)
+![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/mvp-jenkins-connector.png)
 
 ## Getting started
 This Anypoint Studio MVP (Minimum Viable Product) Connector for Jenkins has been built for the MuleSoft Community as a template to reuse and if required further extend. The connector supports 6 operations in this MVP release, which are:
@@ -28,7 +28,7 @@ This section describes the installation process for this mvp connector in order 
 - Perform "mvn install" 
 - Connector should be installed successfully
 
-![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/main/cmd%20mvn%20install.PNG)
+![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/cmd%20mvn%20install.PNG)
 
 ### Step 3 - Adding dependency in Anypoint Studio Project
 After installation is successful, add the following dependency into your anypoint project pom.xml:
@@ -42,7 +42,7 @@ After installation is successful, add the following dependency into your anypoin
 
 The current version of this connector is 1.1.3. Once added, save the pom.xml file and your Mule Palette gets updated and you should see the Jenkins connector.
 
-![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/main/jenkins-mule-palette.PNG)
+![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/jenkins-mule-palette.PNG)
 
 ### Step 4 - Create Jenkins Configuration
 Before you get started and consume the provided operations, make sure to configure the Jenkins Connection within Anypoint Studio. 
@@ -52,7 +52,7 @@ Before you get started and consume the provided operations, make sure to configu
 - User - Login / Connection user
 - API-Token (not password) - Get the API Token for the specified user - more Information: [Create API Token in Jenkins](https://www.jenkins.io/blog/2018/07/02/new-api-token-system/)
 
-![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/main/Jenkins-config.PNG)
+![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/Jenkins-config.PNG)
 
 Now you are all set to use the Jenkins Operations.
 
@@ -63,10 +63,10 @@ This section describes, how to use the provided operation for Jenkins Connector.
 This operation get all configured jobs for the user entered in the configuration. The response is a json object containing **job name and job color**. 
 
 Drag and drop the **Get all jobs** operation into the canvas and provide the configuration of Jenkins. 
-![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/main/getAllJobs-config.PNG)
+![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/getAllJobs-config.PNG)
 
 Also make sure to change the MIME Type to application/json for the **Get all jobs** operation
-![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/main/getAllJobs-config-MIME-Type.PNG)
+![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/getAllJobs-config-MIME-Type.PNG)
 
 **Example response (containing 2 jobs)**:
 
@@ -91,7 +91,7 @@ Also make sure to change the MIME Type to application/json for the **Get all job
 This operations **Get all builds** specified by a job. Job name need to be provided as an property on the operation. 
 
 Drag and drop the **Get all builds** operation into the canvas and provide the configuration of Jenkins. Make sure to provide a valid Jobname in the property field.
-![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/main/getAllBuilds-config.PNG)
+![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/getAllBuilds-config.PNG)
 
 Similar to **Get all jobs** configure also the MIME Type to **application/json** for **Get All Builds**
 
@@ -128,7 +128,7 @@ Similar to **Get all jobs** configure also the MIME Type to **application/json**
 This operations **Get last build info** specified by a job. Job name need to be provided as an property on the operation.  This operation extracts all information regarding the last build specified by the job name.
 
 Drag and drop the **Get last build info** operation into the canvas and provide the configuration of Jenkins. Make sure to provide a valid Jobname in the property field.
-![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/main/getLastBuildInfo.PNG)
+![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/getLastBuildInfo.PNG)
 
 Similar to **Get all jobs** configure also the MIME Type to **application/json** for **Get last build info**
 
@@ -181,7 +181,7 @@ Similar to **Get all jobs** configure also the MIME Type to **application/json**
 This operations **Get last build console text** specified by a job. Job name need to be provided as an property on the operation. This operation extracts the last build console text of the specified job. 
 
 Drag and drop the **Get last build console text** operation into the canvas and provide the configuration of Jenkins. Make sure to provide a valid Jobname in the property field.
-![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/main/getLastBuildConsoleText.PNG)
+![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/getLastBuildConsoleText.PNG)
 
 Different than with the previous operations, this one requires a MIME Type set to **text/plain**.
 
@@ -202,7 +202,7 @@ Different than with the previous operations, this one requires a MIME Type set t
 This operations **Run job with REST client** specified by a job. Job name need to be provided as an property on the operation. This operation executes a jenkins job remotely using the provided Job name.
 
 Drag and drop the **Run job with REST client** operation into the canvas and provide the configuration of Jenkins. Make sure to provide a valid Jobname in the property field.
-![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/main/runJob.PNG)
+![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/runJob.PNG)
 
 Similar to **Get all jobs** configure also the MIME Type to **application/json** for **Run job with REST client**
 
@@ -219,6 +219,6 @@ This operations **Run job with CURL** specified by a job. Job name need to be pr
 Works similarly to Operation 5. 
 
 ### Example Jenkins and Jira
-![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/main/example-jira-jenkins.PNG)
+![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/example-jira-jenkins.PNG)
 
 ## Video Tutorial
