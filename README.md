@@ -222,7 +222,7 @@ Works similarly to Operation 5.
 ![Image of Jenkins MuleSoft Connector](https://github.com/API-Activist/devops-mvp-anypoint-connector-jenkins/blob/master/example-jira-jenkins.PNG)
 
 ## Video Tutorial
-
+Link to the video tutorial: https://youtu.be/LjErAoSrf7Y
 
 ## Caution
 This connector has been build on windows 10 using the Anypoint Studio 7.10 IDE. It has only been tested with Jenkins 2.289.3 on HTTP. HTTPS has not  been tested, but expected to work without further technical issues. Source code is opensource and you can download and extend it further to your needs.
