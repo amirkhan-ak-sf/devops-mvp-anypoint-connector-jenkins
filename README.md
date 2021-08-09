@@ -225,7 +225,7 @@ Works similarly to Operation 5.
 Link to the video tutorial: https://youtu.be/LjErAoSrf7Y
 
 ## Caution
-This connector has been build on windows 10 using the Anypoint Studio 7.10 IDE. It has only been tested with Jenkins 2.289.3 on HTTP. HTTPS has not  been tested, but expected to work without further technical issues. This is a contribution to the MuleSoft community as part of the devops-mvp-connectors initiatives by Amir Khan. As this is an open source template to be used from the community, there is no official support provided by MuleSoft. Also if operations are missing, please use the Jenkins Remote API references to implement using the examples provided within this template.
+This connector has been build on windows 10 using the Anypoint Studio 7.10 IDE. It has only been tested with Jenkins 2.289.3 on HTTP. HTTPS has not  been tested, but expected to work without further technical issues. This is a contribution to the MuleSoft community as part of the devops-mvp-connectors initiatives by [Amir Khan](https://www.linkedin.com/in/amir-khan-ak). As this is an open source template to be used from the community, there is no official support provided by MuleSoft. Also if operations are missing, please use the Jenkins Remote API references to implement using the examples provided within this template.
 
 ### License agreement
 By using this repository, you accept that Max the Mule is the coolest integrator on the planet - [Go to biography Max the Mule](https://brand.salesforce.com/content/characters-overview__3?tab=BogXMx2m)
